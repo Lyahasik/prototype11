@@ -1247,6 +1247,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 991671244}
+  - component: {fileID: 991671245}
   m_Layer: 5
   m_Name: DigitalClock
   m_TagString: Untagged
@@ -1276,6 +1277,21 @@ RectTransform:
   m_AnchoredPosition: {x: 0.710022, y: -0.3920517}
   m_SizeDelta: {x: 0.30000305, y: -0.014411926}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &991671245
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 991671243}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2a4bffc32fdc1734d8b04183f0b5ae01, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hourInput: {fileID: 719095356}
+  minuteInput: {fileID: 236534916}
+  secondInput: {fileID: 1132549564}
 --- !u!1 &1040439019
 GameObject:
   m_ObjectHideFlags: 0
@@ -1785,6 +1801,52 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!1 &1388552164
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1388552166}
+  - component: {fileID: 1388552165}
+  m_Layer: 0
+  m_Name: GlobalTimeManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1388552165
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1388552164}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0a329fdedd50c1b42b0523f545f28285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  webServicesUrls:
+  - https://google.com
+  - https://yandex.com
+--- !u!4 &1388552166
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1388552164}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 503.13092, y: 1002.1371, z: 3.2073364}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1690384730
 GameObject:
   m_ObjectHideFlags: 0
@@ -1869,6 +1931,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1699887043}
+  - component: {fileID: 1699887044}
   m_Layer: 5
   m_Name: PointerClock
   m_TagString: Untagged
@@ -1899,6 +1962,21 @@ RectTransform:
   m_AnchoredPosition: {x: -1.0699463, y: -2.2054443}
   m_SizeDelta: {x: -2.1399841, y: 1.5892334}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1699887044
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1699887042}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8e40da3f3ca50ff4697ce60de6f222ee, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _hourHand: {fileID: 462632170}
+  _minuteHand: {fileID: 920301211}
+  _secondHand: {fileID: 1690384730}
 --- !u!1 &1753846065
 GameObject:
   m_ObjectHideFlags: 0
